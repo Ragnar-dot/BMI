@@ -1,36 +1,38 @@
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    margin: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
+    overflow: hidden;
 }
+
 .container {
-    max-width: 400px ;
+    max-width: 400px;
     margin: 50px auto;
     padding: 40px;
-    background-color: rgba(255, 255, 255, 0.521);
-    box-shadow: 6px 10px 15px rgba(0, 0, 0, 0.808);
+    background-color: rgba(255, 255, 255, 0.247);
+    box-shadow: 6px 10px 15px rgba(0, 0, 0, 0.8);
     border-radius: 8px;
-    margin-top: -1200px;
-   
+    position: relative;
+    z-index: 2;
 }
+
 h2 {
     text-align: center;
     color: #000000;
-    text-shadow: green 1px 1px;
+    text-shadow: 1px 1px green;
 }
+
 .form-group {
     margin-bottom: 15px;
 }
+
 label {
     display: block;
     margin-bottom: 5px;
     color: #000000;
 }
+
 input, select {
     width: calc(100% - 20px);
     padding: 10px;
@@ -38,6 +40,7 @@ input, select {
     border: 1px solid #ddd;
     border-radius: 4px;
 }
+
 button {
     width: 100%;
     padding: 10px;
@@ -48,24 +51,26 @@ button {
     font-size: 20px;
     cursor: pointer;
 }
+
 button:hover {
     background-color: #00c52b;
 }
+
 .result {
     margin-top: 20px;
     text-align: center;
     font-size: 18px;
-    text-shadow: #0000004f 2px 2px ;
+    text-shadow: 2px 2px #0000004f;
 }
 
 video {
-    background-size: cover;
-    display: flex;
+    object-fit: cover;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100vw;
+    z-index: 1;
+    opacity: 95%;
 }
-
-
-
-
-
