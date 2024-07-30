@@ -1,6 +1,62 @@
-.logo {
-    box-shadow: black 5px 8px 8px;
-    border-color: black;
-    background-color: black;
-    
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    margin: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.603);
+    box-shadow: 6px 10px 15px rgba(0, 0, 0, 0.808);
+    border-radius: 8px;
+}
+h2 {
+    text-align: center;
+    color: #000000;
+    text-shadow: green 1px 1px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+}
+input, select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #00c52b;
+}
+.result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    text-shadow: #0000004f 2px 2px ;
+}
+
+
+
+
+

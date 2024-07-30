@@ -3,37 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMI</title>
-    <link rel="stylesheet" href="switch.css">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+
 </head>
 <body>
-
-    <div><img src="BMI (1).png" class="logo"></div>
-
-
-    <div>
-
-   
-         <form action="/action_page.php">
-            <label for="Age">Age (between 1 and 80):</label>
-            <input type="number" id="Age" name="quantity" min="1" max="80">
-            <input type="submit">
-        </form>
-
-        <fieldset data-role="controlgroup">
-            <legend>Choose your gender:</legend>
-              <label for="male">Male</label>
-              <input type="radio" name="gender" id="male" value="male" checked>
-              <label for="female">Female</label>
-              <input type="radio" name="gender" id="female" value="female">
-              <lable for="Kid">Kid</lable>
-              <input type="radio" name="gender" id="Kid" value="Kid">
-        </fieldset>
-
-
-
-
+    <body background="BMI (1).png">
+    <div class="container">
+        <h2>BMI Calculator</h2>
+        <div class="form-group">
+            <label for="category">Select Category:</label>
+            <select id="category">
+                <option value="adult">Adult</option>
+                <option value="kid">Kid</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" placeholder="Enter your height in cm">
+        </div>
+        <div class="form-group">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter your weight in kg">
+        </div>
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        <div class="result" id="result"></div>
     </div>
+    
+    <script type="text/javascript" src="BMI.js"></script>
+    
+
+</body>
+</html>
+
 
 
 
